@@ -3,7 +3,7 @@ module.exports = function (config) {
         basePath: '../',
         frameworks: ['jasmine'],
         files: [
-            'src/stringFilter.js',
+            'src/stringfilter.js',
             'test/*.js'
         ],
         reporters: ['progress', 'coverage'],
@@ -14,7 +14,7 @@ module.exports = function (config) {
         browsers: ['PhantomJS'],
         singleRun: true,
         preprocessors: {
-            'src/stringFilter.js': ['coverage']
+            'src/stringfilter.js': ['coverage']
         },
         coverageReporter: {
             type: 'lcov',
