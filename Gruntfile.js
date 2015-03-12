@@ -90,7 +90,6 @@ module.exports = function (grunt) {
                 'Gruntfile.js',
                 'package.json',
                 'bower.json',
-                '.jshint*',
                 'karma/*.js',
                 '<%= meta.src %>/*.js',
                 '<%= meta.dist %>/<%= pkg.name %>.js'
@@ -118,13 +117,13 @@ module.exports = function (grunt) {
         },
         karma: {
             unit: {
-                configFile: 'karma/karma_dist_min.conf.js'
+                configFile: 'karma/dist_min.conf.js'
             },
             dist: {
-                configFile: 'karma/karma_dist.conf.js'
+                configFile: 'karma/dist.conf.js'
             },
             src: {
-                configFile: 'karma/karma_src.conf.js'
+                configFile: 'karma/src.conf.js'
             }
         },
         coveralls: {
