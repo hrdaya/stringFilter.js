@@ -1,0 +1,35 @@
+{
+    "name": "stringFilter.js",
+    "description": "stringFilter.js:",
+    "version": "<version>",
+    "main": [
+        "dist/stringFilter.js"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "nbproject",
+        "test",
+        "demo",
+        "src",
+        "Gruntfile.js",
+        "karma",
+        "package.json",
+        "index.html"
+    ],
+    "keywords": [
+        "javascript",
+        "js",
+        "string"
+    ],
+    "authors": [
+        "yu-ki higa (https://github.com/hrdaya)"
+    ],
+    "homepage": "http://hrdaya.github.io/stringFilter.js/",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/hrdaya/stringFilter.js.git"
+    }
+}
