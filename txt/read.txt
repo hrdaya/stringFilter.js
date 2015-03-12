@@ -5,7 +5,7 @@
 [![Coverage Status](https://coveralls.io/repos/hrdaya/stringFilter.js/badge.svg)](https://coveralls.io/r/hrdaya/stringFilter.js)
 [![devDependency Status](https://david-dm.org/hrdaya/stringFilter.js/dev-status.svg)](https://david-dm.org/hrdaya/stringFilter.js#info=devDependencies)
 
-「stringFilter.js」はJavaScriptの「String.prototype」を利用して文字列のフィルタリングを実行する拡張を提供します
+「stringFilter.js」はJavaScriptの「String.prototype」にフィルタリング用関数を追加します。
 
  - バグ等ありましたら[issue](https://github.com/hrdaya/stringFilter.js/issues)を上げていただけると助かります :smiley:
 
@@ -14,6 +14,7 @@
 - JavaScriptの「String.prototype」にフィルタリング用の関数を追加します
 - フィルター用の関数を内部に複数持つことにより「String.prototype」の汚染を最小限にします
 - 適用するフィルターを順番に複数適用することができます
+- 独自のフィルター用の関数を追加することができます。
 
 ## 使用方法
 
