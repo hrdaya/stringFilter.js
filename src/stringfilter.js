@@ -776,8 +776,8 @@
                 });
             }
             if (mark !== false) {
-                var reg = /[！＂＃＄％＆＇（）＊＋，．／：；＜＝＞？＠［＼］＾＿｀｛｜｝]/g;
-                str = str.replace(reg, function (s) {
+                var regMark = /[！＂＃＄％＆＇（）＊＋，．／：；＜＝＞？＠［＼］＾＿｀｛｜｝]/g;
+                str = str.replace(regMark, function (s) {
                     return String.fromCharCode(s.charCodeAt(0) - 65248);
                 }).replace(/[‐－―]/g, '-');
             }
@@ -791,10 +791,10 @@
                 var map = {
                     '。': '｡', '、': '､', '「': '｢', '」': '｣', '・': '･'
                 };
-                var reg = new RegExp(
+                var regHankana = new RegExp(
                         '(' + Object.keys(map).join('|') + ')', 'g'
                         );
-                str = str.replace(reg, function (match) {
+                str = str.replace(regHankana, function (match) {
                     return map[match];
                 });
             }
@@ -825,8 +825,8 @@
                 });
             }
             if (mark !== false) {
-                var reg = /[!"#\$%&'\(\)\*\+,\-\.\/:;<=>\?@\[\\\]\^_`\{\|\}]/g;
-                str = str.replace(reg, function (s) {
+                var regMark = /[!"#\$%&'\(\)\*\+,\-\.\/:;<=>\?@\[\\\]\^_`\{\|\}]/g;
+                str = str.replace(regMark, function (s) {
                     return String.fromCharCode(s.charCodeAt(0) + 65248);
                 });
             }
@@ -840,10 +840,10 @@
                 var map = {
                     '｡': '。', '､': '、', '｢': '「', '｣': '」', '･': '・'
                 };
-                var reg = new RegExp(
+                var regHankana = new RegExp(
                         '(' + Object.keys(map).join('|') + ')', 'g'
                         );
-                str = str.replace(reg, function (match) {
+                str = str.replace(regHankana, function (match) {
                     return map[match];
                 });
             }
